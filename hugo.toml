@@ -1,7 +1,6 @@
 baseURL = 'https://stemn.no/'
 languageCode = 'nb-no'
 title = 'STEM Norway'
-theme = 'ananke'
 disqusShortname = 'stemnorway'
 
 [params]
