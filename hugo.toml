@@ -13,3 +13,30 @@ disqusShortname = 'stemnorway'
   twitter = "stemnorway"
   github = "stemnorway"
   linkedin = "company/stemnorway"
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Hjem"
+    url = "#hjem"
+    weight = 1
+  [[menu.main]]
+    identifier = "about"
+    name = "Om oss"
+    url = "#about"
+    weight = 2
+  [[menu.main]]
+    identifier = "services"
+    name = "Tjenester"
+    url = "#services"
+    weight = 3
+  [[menu.main]]
+    identifier = "team"
+    name = "Vårt team"
+    url = "#team"
+    weight = 5
+  [[menu.main]]
+    identifier = "contact"
+    name = "Kontakt"
+    url = "/kontakt/"
+    weight = 6
