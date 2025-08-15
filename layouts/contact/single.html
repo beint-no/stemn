@@ -1,0 +1,228 @@
+{{ define "main" }}
+<div class="bg-slate-900">
+    <!-- Hero Section -->
+    <section class="relative pt-20 pb-12 overflow-hidden">
+        <!-- Animated background shapes -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div
+                class="absolute -top-40 -right-40 w-80 h-80 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse">
+            </div>
+            <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"
+                style="animation-delay: 2s;"></div>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <div
+                    class="inline-flex items-center px-4 py-2 bg-slate-800 rounded-full text-sky-400 text-sm font-medium mb-4 ring-1 ring-slate-700">
+                    <i class="bi bi-envelope mr-2"></i>
+                    Kontakt
+                </div>
+
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
+                    {{ .Title }}
+                </h1>
+
+                <p class="text-lg text-slate-300 max-w-2xl mx-auto">
+                    {{ .Description }}
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-8 bg-slate-900">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Contact Content -->
+            <div class="mb-12">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <!-- Left Half -->
+                    <div class="rounded-2xl p-8 shadow-sm ring-1 ring-slate-700" style="background-color:#1d2a3d;">
+                        <div class="mb-6">
+                            <div
+                                class="inline-flex items-center px-3 py-1 bg-slate-800 rounded-full text-sky-400 text-sm font-medium mb-4 ring-1 ring-slate-700">
+                                <i class="bi bi-info-circle mr-2"></i>
+                                Kontaktinformasjon
+                            </div>
+                            <h2 class="text-2xl font-bold text-white mb-3">Vi er her for å hjelpe deg</h2>
+                            <p class="text-slate-300 leading-relaxed mb-6">Har du spørsmål om våre apper eller trenger du
+                                hjelp med teoriprøven? Vi svarer gjerne på alle henvendelser og hjelper deg med å komme
+                                i gang.</p>
+                        </div>
+
+                        <!-- Contact Info Cards -->
+                        <div class="space-y-4 mb-6">
+                            <div class="flex items-center p-4 bg-slate-800 ring-1 ring-slate-700 rounded-lg shadow-sm">
+                                <div
+                                    class="flex-shrink-0 w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="bi bi-envelope text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-white">E-post</h4>
+                                    <a href="mailto:post@eteo.no"
+                                        class="text-blue-600 hover:text-blue-700 transition-colors">post@eteo.no</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center p-4 bg-slate-800 ring-1 ring-slate-700 rounded-lg shadow-sm">
+                                <div
+                                    class="flex-shrink-0 w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="bi bi-building text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-white">Orgnr</h4>
+                                    <p class="text-slate-300">935 733 944</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center p-4 bg-slate-800 ring-1 ring-slate-700 rounded-lg shadow-sm">
+                                <div
+                                    class="flex-shrink-0 w-10 h-10 bg-purple-600 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="bi bi-geo-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-white">Adresse</h4>
+                                    <p class="text-slate-300">Søndre Kullerød 8, 3241 Sandefjord</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Opening Hours -->
+                        <div class="bg-slate-800 ring-1 ring-slate-700 rounded-lg p-4 shadow-sm">
+                            <h4 class="font-semibold text-gray-900 mb-3 flex items-center">
+                                <i class="bi bi-clock mr-2 text-green-600"></i>
+                                <span class="text-white">Åpningstider</span>
+                            </h4>
+                            <div class="space-y-2 text-sm">
+                                <div class="flex justify-between">
+                                    <span class="text-slate-300">Mandag - Fredag</span>
+                                    <span class="font-medium text-white">09:00 - 17:00</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-slate-300">Lørdag</span>
+                                    <span class="font-medium text-white">10:00 - 14:00</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-slate-300">Søndag</span>
+                                    <span class="font-medium text-red-600">Stengt</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Half -->
+                    <div class="rounded-2xl p-8 shadow-sm ring-1 ring-slate-700" style="background-color:#1d2a3d;">
+                        <div class="mb-6">
+                            <div
+                                class="inline-flex items-center px-3 py-1 bg-slate-800 rounded-full text-sky-400 text-sm font-medium mb-4 ring-1 ring-slate-700">
+                                <i class="bi bi-info-circle mr-2"></i>
+                                Informasjon
+                            </div>
+                            <h2 class="text-2xl font-bold text-white mb-3">Om våre tjenester</h2>
+                            <p class="text-slate-300 leading-relaxed mb-6">Eteo tilbyr omfattende forberedelse til
+                                teoriprøven med oppdaterte spørsmål og interaktive øvelser.</p>
+                        </div>
+
+                        <!-- Info Items -->
+                        <div class="space-y-4">
+                            <div class="bg-slate-800 ring-1 ring-slate-700 rounded-lg p-5 shadow-sm">
+                                <h4 class="font-semibold text-white mb-2 flex items-start">
+                                    <i class="bi bi-check-circle mr-2 text-green-600 mt-1 flex-shrink-0"></i>
+                                    Oppdaterte spørsmål
+                                </h4>
+                                <p class="text-slate-300 text-sm leading-relaxed ml-6">Alle spørsmål er i tråd med
+                                    Statens vegvesen sine krav og oppdateres jevnlig.</p>
+                            </div>
+
+                            <div class="bg-slate-800 ring-1 ring-slate-700 rounded-lg p-5 shadow-sm">
+                                <h4 class="font-semibold text-white mb-2 flex items-start">
+                                    <i class="bi bi-phone mr-2 text-blue-600 mt-1 flex-shrink-0"></i>
+                                    Tilgjengelig på alle enheter
+                                </h4>
+                                <p class="text-slate-300 text-sm leading-relaxed ml-6">Bruk appen på iPhone, Android
+                                    eller nettbrett - synkroniser fremgangen din overalt.</p>
+                            </div>
+
+                            <div class="bg-slate-800 ring-1 ring-slate-700 rounded-lg p-5 shadow-sm">
+                                <h4 class="font-semibold text-white mb-2 flex items-start">
+                                    <i class="bi bi-award mr-2 text-purple-600 mt-1 flex-shrink-0"></i>
+                                    Personlig oppfølging
+                                </h4>
+                                <p class="text-slate-300 text-sm leading-relaxed ml-6">Få detaljert statistikk og
+                                    personlige anbefalinger for å forbedre resultatene dine.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-12 bg-slate-900">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                    Ofte stilte spørsmål
+                </h2>
+                <p class="text-xl text-slate-300">
+                    Her finner du svar på de vanligste spørsmålene
+                </p>
+            </div>
+
+            <div class="space-y-6">
+                <div class="bg-slate-800 ring-1 ring-slate-700 rounded-xl shadow-sm p-6">
+                    <h3 class="text-lg font-semibold text-white mb-2">Hvordan laster jeg ned appen?</h3>
+                    <p class="text-slate-300">Du finner våre apper i App Store (iPhone) og Google Play Store (Android).
+                        Søk etter "Eteo" og last ned gratis.</p>
+                </div>
+
+                <div class="bg-slate-800 ring-1 ring-slate-700 rounded-xl shadow-sm p-6">
+                    <h3 class="text-lg font-semibold text-white mb-2">Koster appen noe?</h3>
+                    <p class="text-slate-300">Appen er gratis å laste ned, og du kan prøve noen tester gratis. For full
+                        tilgang til alle funksjoner tilbyr vi et rimelig abonnement.</p>
+                </div>
+
+                <div class="bg-slate-800 ring-1 ring-slate-700 rounded-xl shadow-sm p-6">
+                    <h3 class="text-lg font-semibold text-white mb-2">Kan jeg øve offline?</h3>
+                    <p class="text-slate-300">Ja, når du har lastet ned innholdet kan du øve uten internettforbindelse.
+                    </p>
+                </div>
+
+                <div class="bg-slate-800 ring-1 ring-slate-700 rounded-xl shadow-sm p-6">
+                    <h3 class="text-lg font-semibold text-white mb-2">Er spørsmålene oppdaterte?</h3>
+                    <p class="text-slate-300">Ja, vi oppdaterer kontinuerlig våre spørsmål og teorimateriale i tråd med
+                        Statens vegvesen sine krav.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<style>
+    .prose h2 {
+        color: #1f2937;
+        font-weight: 700;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .prose h3 {
+        color: #374151;
+        font-weight: 600;
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .prose ul {
+        margin: 1rem 0;
+    }
+
+    .prose li {
+        margin: 0.5rem 0;
+    }
+</style>
+{{ end }}
