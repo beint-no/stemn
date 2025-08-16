@@ -1,7 +1,6 @@
 baseURL = 'https://stemn.no/'
 languageCode = 'nb-no'
 title = 'STEM Norway'
-disqusShortname = 'stemnorway'
 
 [params]
   description = 'Vi jobber for å styrke STEM-feltene i Norge gjennom kampanjer, møter, kurs og aktivisme.'
