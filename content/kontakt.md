@@ -3,7 +3,7 @@ title: "Kontakt oss"
 meta_title: "Ta kontakt med oss for spørsmål eller samarbeid | STEAM Norway"
 date: 2025-08-15
 description: "Ta kontakt med oss for spørsmål eller samarbeid"
-type: "contact"
+layout: "contact"
 ---
 
 ## Ta kontakt med oss
